@@ -1,3 +1,13 @@
+npm install @fortawesome/fontawesome-free
+npm install @fortawesome/fontawesome-svg-core
+npm install @fortawesome/free-solid-svg-icons
+npm install @fortawesome/react-fontawesome
+npm install axios
+npm install classnames
+npm install react-icons
+npm install react-router-dom
+npm install gh-pages --save-dev
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

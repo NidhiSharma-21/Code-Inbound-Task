@@ -1,0 +1,300 @@
+/* src/App.css */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(228, 228, 235);
+}
+
+.survey-form {
+
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 800px;
+  width: 100%;
+  justify-content: center;
+}
+
+.question-card {
+  margin-bottom: 30px;
+}
+
+.question-card h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+  
+}
+
+.options label {
+  display: block;
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  resize: vertical;
+}
+
+
+
+.navigation button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.thank-you-screen {
+  text-align: center;
+  padding: 20px;
+}
+
+.thank-you-screen h1 {
+  font-size: 2em;
+  color: #333;
+}
+.option-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  margin: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.option-circle input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.option-circle .option-number {
+  font-size: 18px;
+}
+
+.option-circle input:checked + .option-number {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* General styling for the welcome screen */
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  color: #181717;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.welcome-description {
+  font-size: 1.2rem;
+  color: #1a1818;
+  margin-bottom: 40px;
+}
+
+.button-start {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-start:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.button-icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .welcome-title {
+    font-size: 2rem;
+  }
+  
+  .welcome-description {
+    font-size: 1rem;
+  }
+  
+  .button-start {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+  
+  .button-icon {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* General styling for question card */
+.question-card {
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+
+}
+
+/* Styling for the options container */
+.options {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+
+/* Styling for each option circle */
+.option-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%;
+  border: 2px solid #000;
+  background-color: #fff;
+  color: #007bff;
+  font-size: 1rem; 
+  cursor: pointer;
+  position: relative;
+}
+
+.option-circle input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.option-circle input[type="radio"]:checked + .option-number {
+  background-color: red;
+  color: #fff;
+}
+
+.option-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  font-size: 1rem; 
+}
+
+/* Styling for the navigation container */
+.navigation {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 20px; 
+}
+
+/* Common styling for buttons */
+.navigation button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+  margin:10px;
+}
+/* Center the header content */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.question-info {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Center the content within the survey-form */
+.survey-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Styling for the Previous button */
+.button-prev {
+  background-color: #003366; 
+  padding: 5px; 
+}
+
+.button-prev:hover {
+  background-color: #002244; 
+}
+
+.button-skip {
+  background-color: #007bff;
+  padding: 5px; 
+}
+
+.button-skip:hover {
+  background-color: #0056b3; 
+}
+
+.button-next {
+  background-color: #ff69b4;
+  padding: 5px;  
+}
+
+.button-next:hover {
+  background-color: #ff1493; 
+}
+
+/* Styling for the Submit button */
+.button-submit {
+  background-color: #28a745;
+  padding: 5px;  
+}
+
+.button-submit:hover {
+  background-color: #218838; 
+}
+
+
+

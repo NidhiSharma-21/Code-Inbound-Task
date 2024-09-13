@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Code-Inbund-Task/static/css/main.f54bfd21.css",
+    "main.js": "/Code-Inbund-Task/static/js/main.f248d8a6.js",
+    "index.html": "/Code-Inbund-Task/index.html",
+    "main.f54bfd21.css.map": "/Code-Inbund-Task/static/css/main.f54bfd21.css.map",
+    "main.f248d8a6.js.map": "/Code-Inbund-Task/static/js/main.f248d8a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f54bfd21.css",
+    "static/js/main.f248d8a6.js"
+  ]
+}
